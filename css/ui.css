@@ -1,0 +1,53 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tools {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tool { background: #1e293b; color: #e2e8f0; }
+.tool.active { outline: 2px solid #38bdf8; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 16px;
+}
+
+.panel {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.inventory {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.inv-item {
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #334155;
+}
+
+.inv-item.active { outline: 2px solid #a78bfa; }
+
+.inv-count {
+  display: block;
+  color: #cbd5e1;
+  font-size: 12px;
+  margin-top: 4px;
+}
