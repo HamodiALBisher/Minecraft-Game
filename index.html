@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>2D Minecraft</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/world.css" />
+  <link rel="stylesheet" href="css/ui.css" />
+</head>
+<body>
+  <section id="landing" class="page">
+    <h1>2D Minecraft</h1>
+    <p>Select a tool to collect blocks, then place collected blocks back.</p>
+    <button id="startBtn">Start</button>
+  </section>
+
+  <section id="game" class="page hidden">
+    <header class="topbar">
+      <div class="tools">
+        <button class="tool" data-tool="axe">🪓 Axe</button>
+        <button class="tool" data-tool="pickaxe">⛏ Pickaxe</button>
+        <button class="tool" data-tool="shovel">🧹 Shovel</button>
+        <button id="clearSelectionBtn" class="secondary">Clear</button>
+      </div>
+      <div class="actions">
+        <button id="resetBtn" class="danger">Reset</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <h2>Inventory</h2>
+        <div id="inventory" class="inventory"></div>
+      </section>
+
+      <section class="panel world-panel">
+        <h2>World</h2>
+        <div id="world" class="world"></div>
+      </section>
+    </main>
+  </section>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
